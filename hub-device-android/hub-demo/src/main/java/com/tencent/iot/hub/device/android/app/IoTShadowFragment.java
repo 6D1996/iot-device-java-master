@@ -140,7 +140,7 @@ public class IoTShadowFragment extends Fragment {
                 // 要发布的数据
                 Map<String, String> data = new HashMap<String, String>();
                 // 车辆类型
-                data.put("car_type", "suv");
+                data.put("timestamp",  System.currentTimeMillis()+"");
                 // 车辆油耗
                 data.put("oil_consumption", "6.6");
                 // 车辆最高速度

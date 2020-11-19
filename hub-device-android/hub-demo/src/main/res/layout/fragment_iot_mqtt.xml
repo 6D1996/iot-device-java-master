@@ -3,7 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-
     <EditText
         android:id="@+id/editText2"
         android:layout_width="match_parent"
@@ -20,7 +19,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="30dp">
 
         <Button
             android:id="@+id/dynreg"
@@ -47,7 +46,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="30dp">
 
         <Button
             android:id="@+id/subscribe_topic"
@@ -73,13 +72,13 @@
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="30dp">
         <Button
-            android:id="@+id/subscribe_rrpc_topic"
+            android:id="@+id/subscribe_Video"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
-            android:text="订阅RRPC主题" />
+            android:text="视频请求" />
         <Button
             android:id="@+id/subscribe_broadcast_topic"
             android:layout_width="0dp"
@@ -90,7 +89,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="30dp">
 
         <Button
             android:id="@+id/subdev_online"
@@ -118,7 +117,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="30dp">
 
         <Button
             android:id="@+id/mlog"
@@ -136,7 +135,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="30dp">
 
         <Button
             android:id="@+id/subdev_binded"
@@ -164,7 +163,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="30dp">
 
         <Button
             android:id="@+id/websocket_connect"
@@ -192,7 +191,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="30dp">
 
         <Button
             android:id="@+id/get_remote_config"

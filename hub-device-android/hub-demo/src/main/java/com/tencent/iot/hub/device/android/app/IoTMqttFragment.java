@@ -77,7 +77,7 @@ public class IoTMqttFragment extends Fragment {
 
     private Button mSubScribeBroadcastBtn;
 
-    private Button mSubScribeRRPCBtn;
+    private Button mSubScribeVideoBtn;
 
     private Button mCheckFirmwareBtn;
 
@@ -326,14 +326,14 @@ public class IoTMqttFragment extends Fragment {
                 // 要发布的数据
                 Map<String, String> data = new HashMap<String, String>();
                 // 车辆类型
-                data.put("car_type", "suv");
+                data.put("timestamp", System.currentTimeMillis()+"");
                 // 车辆油耗
-                data.put("oil_consumption", "6.6");
+                data.put("type" , "11");
                 // 车辆最高速度
-                data.put("maximum_speed", "205");
+                data.put("speed", "5");
                 // 温度信息
-                data.put("temperature", String.valueOf(temperature.getAndIncrement()));
-
+                data.put("acceleration", "1");
+                data.put("wheel_angle","1");
                 // 需先在腾讯云控制台，增加自定义主题: data，用于更新自定义数据
                 mMQTTSample.publishTopic("data", data);
             }
@@ -374,7 +374,7 @@ public class IoTMqttFragment extends Fragment {
             }
         });
 
-        mSubScribeRRPCBtn.setOnClickListener(new View.OnClickListener() {
+        mSubScribeVideoBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (mMQTTSample == null)
@@ -488,7 +488,7 @@ public class IoTMqttFragment extends Fragment {
         mSubdevOfflineBtn = view.findViewById(R.id.subdev_offline);
         mDeviceLogBtn = view.findViewById(R.id.mlog);
         mUploadLogBtn = view.findViewById(R.id.uploadlog);
-        mSubScribeRRPCBtn = view.findViewById(R.id.subscribe_rrpc_topic);
+        mSubScribeVideoBtn = view.findViewById(R.id.subscribe_Video);
         mSubdevBindedBtn = view.findViewById(R.id.subdev_binded);
         mSubdevUnbindedBtn = view.findViewById(R.id.subdev_unbinded);
         mSubdevRelationCheckBtn = view.findViewById(R.id.check_subdev_relation);
